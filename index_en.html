@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+    Yi Lyu's personal website!
+    Name:   Yi Lyu
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yi Lyu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <table id="main-table">
+      <tr>
+        <td>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <p class="p-center" id="name">
+                  <name>Cui Hang</name>
+                    <p class="p-center" id="email">
+                        cuihang97@foxmail.com
+                    </p>
+
+                    <p class="p-center smallerFont">
+                        <a href="https://www.linkedin.com/in/yi-lyu-b14a1917b/">LinkedIn</a>
+                        &nbsp|&nbsp;
+                        <a href="mailto:isabella_lyu@cs.wisc.edu">Email</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/niconical/">GitHub</a>
+                    </p>
+                </p>
+
+                <br>
+    
+                <p>
+                  I'm currently a CS graduate student in Computer Science
+                  Department in
+                  <span class="emphasis">University of Wisconsin-Madison</span>.
+                  <br>
+                  <br>
+
+                 <span class=news>NEWS </span>
+                 <span class=emphasis> I will join Meta(Facebook) as SWE intern in 2022 summer :-) </span>
+                </p>
+  
+              </td>
+              <td class="td-with-padding">
+                <img src="images/ch.png" id="Weiqi-image" />
+              </td>
+            </tr>
+          </table>
+          <table class="sub-table">
+            <tr>
+              <td class="td-with-padding">
+                <heading>Education</heading>
+                <ul>
+                  <li>
+                    <span class="emphasis">University of Wisconsin-Madison</span>,
+                    Madison, WI, USA
+                    <span class="align-right">Sep 2021 - May 2023 </span>
+                    <p>
+                      Major in Computer Science (MSCS)
+                    </p>
+                  </li>
+                  <li>
+                    <span class="emphasis">Shanghai Jiao Tong University</span>,
+                    Shanghai, China
+                    <span class="align-right">Sep 2017 - Jun 2021 </span>
+                    <p>
+                      Major in Information Engineering (Bachelor)
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-with-padding">
+                <heading>Professional Experiences</heading>
+
+                <p>
+                    <ol>
+                        <li>
+                          <a href="projects/fbIntern.html"> Creator Composer FeedInsight tool & Mitigate FB groupposting timeout</a>
+                          <span class="aligh-right"> May 2022 - Aug 2022</span>
+                          <br>
+                          <span class="smallerFont">Software Development Internship, <span class="emphasis">Meta (Facebook)</span> </span>
+                          <br>
+                          <br>
+
+                          I create an internal tool to show the post with high engagement score posted on the selected date. The tool is created
+                          with GraphQL and React.
+                          
+                          Also, I modified the workflow of existing facebook app group cross posting logic to mitigate the timeout problem
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                          <a href="projects/bdIntern.html"> Log support for ByteDance's internal pod scheduler (Toutiao Cloud service) </a>
+                          <span class="aligh-right"> May 2022 - Aug 2022</span>
+                          <br>
+                          <span class="smallerFont">Software Development Internship, <span class="emphasis"> ByteDance </span> </span>
+                          <br>
+                          <br>
+                        
+                          I added extra log support to ByteDance’s internal scheduler based on K8S. Compared with previous
+                          design, the new version shows concise, fine-grained debug logs and also balance the time and space
+                          cost . It is now deployed on the internal scheduler on more than 10,000 nodes
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li>
+                            <a href="projects/msIntern.html">Table Service For Azure Storage Simulator, Azurite  </a>
+                            <span class="align-right">July 2020 - October 2020</span>
+                            <br>
+                            <span class="smallerFont">Software Development Internship, <span class="emphasis">Microsoft</span> </span> 
+                            <br>
+                            <br>
+
+                            Azurite is the <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite"> offical recommended</a> local simulator for Azure Storage , which enables both internal developers and external consumers to test their codes locally. I am responsible for the table service part of Azurite.
+                            I designed the structure according to the real Azure Storage and simulated the low-level storage part with LokiJS, which is an open source in-memory database.
+                            What’s more, I also designed mechanisms to bulk process the data and solve consistency problems. This project has received more than <span class="emphasis">700 stars</span> on GitHub by now.
+                        </li>
+                        <br>
+                        <br>
+
+                        <li>
+                            <a href="projects/ggIntern.html">Design a highly distributed data processing pipeline</a>
+                            <span class="align-right">July 2019 - October 2019</span>
+                            <br>
+                            <span class="smallerFont">Software Development Intern, <span class="emphasis">Google</span> </span>
+                            <br>
+                            <br>
+                            My task is to write a highly distributed pipeline to coordiate the data inconsistency in F1 Databases. 
+                            I adopt FlumeJava as the main development framework and java as main developmemnt language. 
+                            Finally I deployed it using Borg system and it is a <span class="emphasis">daily run job</span> in Google. It can process <span class="emphasis">1.4 billion</span> Google account data within <span class="emphasis">20 minutes</span>.
+                            </end>
+                        </li>
+
+                        
+                    </ol>
+
+                </p>
+
+                
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-with-padding">
+                <heading>Selected Projects</heading>
+                <ol>
+                  <li>
+                    JOS Operating System [<a
+                      href="https://github.com/isabella0428/JOS"
+                      >Code</a
+                    >]
+                    <p>
+                      Based on skeleton code provided by
+                      <a
+                        href="https://pdos.csail.mit.edu/6.828/2018/schedule.html"
+                        >MIT 6.828</a
+                      >, I implemented major parts of JOS in an exokernel style.
+                      It consists of booting, memory management, user-level
+                      environments and premptive multitasking. Also I have read
+                      the major source code of
+                      <a href="https://en.wikipedia.org/wiki/Xv6">xv6</a>
+                      through the process.
+                    </p>
+                  </li>
+
+                  <li>
+                    Graminsta [<a
+                      href="https://github.com/SPS-2020-Team-15/Graminsta"
+                      >Code</a
+                    >]
+                    <p>
+                     This project is done during <span class="emphasis">Google Software Product Sprint Program</span>(<a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/">SPS</a>) in the summer of 2020.
+                     Together with other three students and a Google enginner as our advisor, we create an application following the design of Instagram. We adopt Flutter as frontend developement framework and django as backend development framework.
+                    </p>
+                  </li>
+
+                  <li>
+                     KeyValue Store based on LSM tree [<a
+                      href="https://github.com/isabella0428/SJTU_SE121/tree/master/project1-kvstore"
+                      >Code</a
+                    >]
+                    <p>
+                     I built a KeyValue store system based on <span class="emphasis">LSM tree</span>, according to the design of <span class="emphasis">LevelDB</span>. I added write-ahead-log for data durability. To further improve the efficiency, I used bloomfilter to speed up the process of looking up keyvalue in each SSTable.
+                    </p>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-with-padding">
+                <heading>Awards & Scholarships</heading>
+                <ol>
+                  <li class="li-margin">
+                    Zhiyuan College Honors Scholarship (CN ¥5000, Top5%)
+                    <span class="align-right">2017 & 2018 & 2019</span>
+                  </li>
+                  <li class="li-margin">
+                    Meritorious Winner, MCM/ICM (Problem A)
+                    <span class="align-right">2018</span>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-with-padding">
+                <heading>Teaching Experience</heading>
+                <ol>
+                  <li class="li-margin">
+                    CS359: Computer Architecture
+                    <span class="align-right">2019 Fall</span>
+                    <br />
+                    Teaching Assistant at Shanghai Jiao Tong University
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-with-padding">
+                <heading>Miscellaneous</heading>
+                <p>
+                  I'm an amateur in singing / baking / playing badmintion /
+                  traveling.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
